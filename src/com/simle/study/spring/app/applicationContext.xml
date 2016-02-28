@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="userdao" class="com.simle.study.spring.app.dao.UserDao"/>
+
+	<bean id="userService" class="com.simle.study.spring.app.service.UserService" >
+		<property name="userdao" ref="userdao"/>
+		
+		<!--  property name="name" value="xiaoming"></property>
+		<property name="arry">
+			<list>
+				<value>nihao</value>
+				<value>wohao</value>
+			</list>
+		</property>
+		<property name="arrylist">
+			<list>
+				<value>list1</value>
+				<value>list2</value>
+			</list>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="11" value="map11"/>
+				<entry key="12" value="map12" />
+				<entry key="12" value="map12" />
+			</map>
+		</property>
+		<property name="set">
+			<set>
+				<value>set31</value>
+				<value>set22</value>
+				<value>set31</value>
+			</set>
+		</property SS-->
+	</bean>		
+	
+</beans>
